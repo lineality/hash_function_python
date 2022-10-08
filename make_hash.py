@@ -79,10 +79,12 @@ def make_hash(input_string, timestamp_string):
 
     return hash
 
+# Run it
 print( make_hash("123:123:243:234", timestamp) )
 
 # compare small change: just the last digit of the time
 print( make_hash("123:123:243:234","20221008133518385205") )
 print( make_hash("123:123:243:234","20221008133518385206") )
-# small number edge case check
+
+# small number input: edge case check
 print( make_hash("1","3") )
